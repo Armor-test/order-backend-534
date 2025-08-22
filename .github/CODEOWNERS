@@ -1,0 +1,38 @@
+# CODEOWNERS file for order-backend-534
+# Global owners - will be requested for all PRs
+* @Armor-test/unit-devops @Armor-test/squad-product @Armor-test/dept-reliability
+
+# Directory ownership
+/app/ @Armor-test/dept-reliability @Armor-test/squad-qa @Armor-test/dept-data
+/config/ @Armor-test/squad-mobile @Armor-test/squad-apps @Armor-test/dept-data
+/lib/ @Armor-test/unit-governance @Armor-test/grp-payments
+/ui/ @Armor-test/dept-security @Armor-test/dept-ui @Armor-test/squad-reporting
+/third_party/ @Armor-test/squad-payments @Armor-test/dept-automation
+/spec/ @Armor-test/unit-design @Armor-test/dept-test @Armor-test/team-frontend
+/auth/ @Armor-test/squad-frontend @Armor-test/dept-identity @Armor-test/unit-test
+/test/ @Armor-test/squad-frontend @Armor-test/squad-research @Armor-test/grp-search
+/web/ @Armor-test/team-security @Armor-test/dept-identity @Armor-test/team-notifications
+/deploy/ @Armor-test/dept-reliability @Armor-test/squad-tooling
+/tools/ @Armor-test/dept-data @Armor-test/squad-performance @Armor-test/squad-ux
+/controllers/ @Armor-test/unit-design @Armor-test/squad-performance
+/services/ @Armor-test/dept-security @Armor-test/grp-ui @Armor-test/dept-ui
+/styles/ @Armor-test/dept-reporting @Armor-test/unit-governance @Armor-test/squad-ux
+
+# File type ownership
+*.tsx @Armor-test/squad-ml @Armor-test/grp-api
+*.properties @Armor-test/team-governance @Armor-test/grp-api @Armor-test/unit-test
+*.php @Armor-test/team-frontend @Armor-test/squad-ux @Armor-test/team-logging
+*.gradle @Armor-test/squad-payments @Armor-test/squad-product
+*.cs @Armor-test/unit-test @Armor-test/dept-reporting
+*.scala @Armor-test/dept-automation @Armor-test/grp-search @Armor-test/squad-reporting
+*.css @Armor-test/dept-reporting @Armor-test/dept-release @Armor-test/team-security
+*.lock @Armor-test/dept-billing @Armor-test/squad-api @Armor-test/dept-security
+*.h @Armor-test/squad-ml @Armor-test/dept-notifications
+*.html @Armor-test/squad-research @Armor-test/dept-api @Armor-test/dept-notifications
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
